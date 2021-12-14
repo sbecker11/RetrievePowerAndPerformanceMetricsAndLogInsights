@@ -1,0 +1,9 @@
+{
+  "errors" : [ {
+    "id" : "2009bd35-a4f6-4a67-9271-4a02bfe7a518",
+    "status" : "404",
+    "code" : "PATH_ERROR",
+    "title" : "The URL path is not valid",
+    "detail" : "The relationship 'app-events' does not exist"
+  } ]
+}

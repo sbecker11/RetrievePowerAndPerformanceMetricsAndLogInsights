@@ -1,0 +1,145 @@
+{
+  "data" : {
+    "type" : "apps",
+    "id" : "1583111882",
+    "attributes" : {
+      "name" : "Angel Studios",
+      "bundleId" : "com.angel.mobile",
+      "sku" : "com.angel.mobile",
+      "primaryLocale" : "en-US",
+      "isOrEverWasMadeForKids" : false,
+      "subscriptionStatusUrl" : null,
+      "subscriptionStatusUrlVersion" : null,
+      "subscriptionStatusUrlForSandbox" : null,
+      "subscriptionStatusUrlVersionForSandbox" : null,
+      "availableInNewTerritories" : false,
+      "contentRightsDeclaration" : "USES_THIRD_PARTY_CONTENT"
+    },
+    "relationships" : {
+      "ciProduct" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/ciProduct",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/ciProduct"
+        }
+      },
+      "betaTesters" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/betaTesters"
+        }
+      },
+      "betaGroups" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/betaGroups",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/betaGroups"
+        }
+      },
+      "appStoreVersions" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/appStoreVersions",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/appStoreVersions"
+        }
+      },
+      "preReleaseVersions" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/preReleaseVersions",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/preReleaseVersions"
+        }
+      },
+      "betaAppLocalizations" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/betaAppLocalizations",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/betaAppLocalizations"
+        }
+      },
+      "builds" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/builds",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/builds"
+        }
+      },
+      "betaLicenseAgreement" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/betaLicenseAgreement",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/betaLicenseAgreement"
+        }
+      },
+      "betaAppReviewDetail" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/betaAppReviewDetail",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/betaAppReviewDetail"
+        }
+      },
+      "appInfos" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/appInfos",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/appInfos"
+        }
+      },
+      "appClips" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/appClips",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/appClips"
+        }
+      },
+      "endUserLicenseAgreement" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/endUserLicenseAgreement",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/endUserLicenseAgreement"
+        }
+      },
+      "preOrder" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/preOrder",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/preOrder"
+        }
+      },
+      "prices" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/prices",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/prices"
+        }
+      },
+      "availableTerritories" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/availableTerritories",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/availableTerritories"
+        }
+      },
+      "inAppPurchases" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/inAppPurchases",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/inAppPurchases"
+        }
+      },
+      "gameCenterEnabledVersions" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/gameCenterEnabledVersions",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/gameCenterEnabledVersions"
+        }
+      },
+      "perfPowerMetrics" : {
+        "links" : {
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/perfPowerMetrics"
+        }
+      },
+      "appEvents" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/appEvents",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/appEvents"
+        }
+      },
+      "reviewSubmissions" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/relationships/reviewSubmissions",
+          "related" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882/reviewSubmissions"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/apps/1583111882"
+  }
+}

@@ -1,0 +1,35 @@
+
+
+TOKEN=$(./create-token.sh);
+URL=https://api.appstoreconnect.apple.com/v1/apps;
+curl -H "Authorization: Bearer ${TOKEN}" ${URL}
+
+TOKEN=$(./create-token.sh);
+URL=https://api.appstoreconnect.apple.com/v1/apps/1583111882/appStoreVersions
+curl -H "Authorization: Bearer ${TOKEN}" ${URL} > app-store-versions.json
+
+TOKEN=$(./create-token.sh);
+URL=https://api.appstoreconnect.apple.com/v1/apps/1583111882
+JSON=angel-app.json
+curl -H "Authorization: Bearer ${TOKEN}" ${URL} > ${JSON}
+
+TOKEN=$(./create-token.sh);
+URL=https://api.appstoreconnect.apple.com/v1/apps/1583111882/builds
+JSON=angel-builds.json
+curl -H "Authorization: Bearer ${TOKEN}" ${URL} > ${JSON}
+
+TOKEN=$(./create-token.sh);
+URL=$(jq ".data.relationships.perfPowerMetrics.links.related" angel-app.json)
+URL=$(echo $URL | tr -d '"')
+JSON=angel-perfPowerMetrics.json
+curl -H "Authorization: Bearer ${TOKEN}" ${URL} > ${JSON}
+cat ${JSON}
+
+TOKEN=$(./create-token.sh);
+URL=https://api.appstoreconnect.apple.com/v1/apps/1583111882/appEvents
+JSON=angel-appEvents.json
+curl -H "Authorization: Bearer ${TOKEN}" ${URL} > ${JSON}
+
+
+
+python3 get-metrics-insights.py 1583111882

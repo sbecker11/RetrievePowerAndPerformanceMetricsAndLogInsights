@@ -1,7 +1,7 @@
 """
 See README.md for help configuring and running this script.
 """
-
+import os
 import sys
 import datetime
 import json
@@ -12,9 +12,17 @@ import jwt
 ########
 # KEY CONFIGURATION - Put your API Key info here
 
-ISSUER_ID = "###############################"
-KEY_ID = "##############"
-PRIVATE_KEY_PATH = "######################"
+# added on 2021-12-08 by shawn.becker@angel.com
+ISSUER_ID = os.environ.get('ISSUER_ID')
+KEY_ID = os.environ.get('KEY_ID')
+PRIVATE_KEY_PATH = os.environ.get('PRIVATE_KEY_PATH')
+
+for id in ["ISSUER_ID", "KEY_ID", "PRIVATE_KEY_PATH"]:
+    envvar = os.environ.get(id)
+    if envvar == null:
+        die(1, id + " undefined")
+    else:
+        print(id " " + envvar)
 
 ########
 # GET DIAGNOTICS LOGS - This is where the actual API interaction happens

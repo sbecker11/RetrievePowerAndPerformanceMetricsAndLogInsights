@@ -1,20 +1,21 @@
 """
 See README.md for help configuring and running this script.
 """
+# author: 2021-12-08 shawn.becker@angel.com
 
 import os
+from dotenv import load_dotenv
+
 import sys
 import datetime
 from urllib.parse import urlparse
 import http.client
 import json
 import jwt
-from dotenv import load_dotenv
 
 ########
 # KEY CONFIGURATION - Put your API Key info here
 
-# added on 2021-12-08 by shawn.becker@angel.com
 load_dotenv()
 ISSUER_ID = os.environ.get('ISSUER_ID')
 KEY_ID = os.environ.get('KEY_ID')
@@ -200,7 +201,6 @@ def blue(text):
 ########
 # ENTRY POINT
 if __name__ == "__main__":
-    app_id = '1583111882'
-    if len(sys.argv) > 1:
-        app_id = sys,argv[1]
-    get_metrics_insights(app_id)
+    if len(sys.argv) != 2:
+        die(-1, "usage: python3 get-metrics-insights.py {appId}")
+    get_metrics_insights(sys.argv[1])
